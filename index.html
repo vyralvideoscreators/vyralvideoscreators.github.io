@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="facebook-domain-verification" content="ilwc30drl2i17yu073rv2y3kfrrsb4" />
-<title>Magic Design LLC — AI-Powered Business Solutions</title>
+<title>CENTRAL — El panel de control para negocios que venden por WhatsApp e Instagram</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
 <style>
@@ -33,7 +32,6 @@
     overflow-x: hidden;
   }
 
-  /* ── Grid noise texture overlay ── */
   body::before {
     content: '';
     position: fixed;
@@ -45,7 +43,6 @@
     z-index: 0;
   }
 
-  /* ── Nav ── */
   nav {
     position: fixed; top: 0; left: 0; right: 0; z-index: 100;
     display: flex; align-items: center; justify-content: space-between;
@@ -59,8 +56,15 @@
     font-size: 17px; font-weight: 800;
     letter-spacing: -0.5px;
     color: var(--text);
+    display: flex; align-items: baseline; gap: 6px;
   }
   .nav-logo span { color: var(--accent); }
+  .nav-logo-sub {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px; font-weight: 500;
+    letter-spacing: 0;
+    color: var(--muted);
+  }
   .nav-contact {
     font-size: 13px; font-weight: 500;
     color: var(--muted);
@@ -69,7 +73,6 @@
   }
   .nav-contact:hover { color: var(--text); }
 
-  /* ── Hero ── */
   .hero {
     position: relative; z-index: 1;
     min-height: 100vh;
@@ -80,7 +83,6 @@
     overflow: hidden;
   }
 
-  /* Signature element: pulsing connection orb */
   .orb {
     position: absolute;
     width: 600px; height: 600px;
@@ -141,187 +143,4 @@
     color: #fff; font-size: 14px; font-weight: 600;
     text-decoration: none; border-radius: 50px;
     transition: opacity 0.2s, transform 0.2s;
-    box-shadow: 0 0 40px var(--glow);
-  }
-  .hero-cta:hover { opacity: 0.88; transform: translateY(-2px); }
-
-  /* ── What we do ── */
-  .section {
-    position: relative; z-index: 1;
-    padding: 100px 48px;
-    max-width: 1100px; margin: 0 auto;
-  }
-
-  .section-label {
-    font-size: 10px; font-weight: 600; letter-spacing: 3px;
-    text-transform: uppercase; color: var(--accent);
-    margin-bottom: 16px;
-  }
-
-  h2 {
-    font-family: 'Syne', sans-serif;
-    font-size: clamp(28px, 4vw, 44px);
-    font-weight: 800; letter-spacing: -1.5px;
-    color: var(--text); margin-bottom: 16px;
-  }
-
-  .section-intro {
-    font-size: 17px; color: var(--muted);
-    max-width: 540px; line-height: 1.7;
-    margin-bottom: 60px;
-  }
-
-  .services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-  }
-
-  .service-card {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 16px;
-    padding: 32px 28px;
-    transition: border-color 0.25s, transform 0.25s;
-  }
-  .service-card:hover {
-    border-color: rgba(124,92,252,0.35);
-    transform: translateY(-3px);
-  }
-
-  .service-icon {
-    width: 44px; height: 44px; border-radius: 12px;
-    background: linear-gradient(135deg, rgba(124,92,252,0.2), rgba(0,212,255,0.1));
-    border: 1px solid rgba(124,92,252,0.25);
-    display: flex; align-items: center; justify-content: center;
-    font-size: 20px; margin-bottom: 20px;
-  }
-
-  .service-title {
-    font-family: 'Syne', sans-serif;
-    font-size: 18px; font-weight: 700;
-    color: var(--text); margin-bottom: 10px;
-  }
-
-  .service-desc {
-    font-size: 14px; color: var(--muted); line-height: 1.65;
-  }
-
-  /* ── Divider ── */
-  .divider {
-    position: relative; z-index: 1;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, var(--border), transparent);
-    margin: 0 48px;
-  }
-
-  /* ── Contact ── */
-  .contact-section {
-    position: relative; z-index: 1;
-    padding: 100px 48px;
-    text-align: center;
-  }
-
-  .contact-section h2 { margin-bottom: 12px; }
-
-  .contact-sub {
-    font-size: 16px; color: var(--muted);
-    margin-bottom: 40px;
-  }
-
-  .contact-email {
-    display: inline-block;
-    font-family: 'Syne', sans-serif;
-    font-size: 22px; font-weight: 700;
-    color: var(--text);
-    text-decoration: none;
-    border-bottom: 2px solid var(--accent);
-    padding-bottom: 2px;
-    transition: color 0.2s;
-  }
-  .contact-email:hover { color: var(--accent); }
-
-  /* ── Footer ── */
-  footer {
-    position: relative; z-index: 1;
-    padding: 32px 48px;
-    border-top: 1px solid var(--border);
-    display: flex; align-items: center; justify-content: space-between;
-    font-size: 13px; color: var(--muted);
-  }
-
-  /* ── Responsive ── */
-  @media (max-width: 640px) {
-    nav { padding: 16px 20px; }
-    .section { padding: 60px 20px; }
-    .contact-section { padding: 60px 20px; }
-    footer { padding: 24px 20px; flex-direction: column; gap: 8px; text-align: center; }
-    .divider { margin: 0 20px; }
-  }
-</style>
-</head>
-<body>
-
-<nav>
-  <div class="nav-logo">Magic Design<span>.</span></div>
-  <a href="mailto:Magicdes2023@gmail.com" class="nav-contact">Magicdes2023@gmail.com</a>
-</nav>
-
-<section class="hero">
-  <div class="orb"></div>
-  <div class="hero-eyebrow">Magic Design LLC — Delaware, USA</div>
-  <h1>Intelligent technology<br>for <em>connected businesses</em></h1>
-  <p class="hero-sub">We build AI-powered software that connects businesses with their customers through smarter automation and real-time communication.</p>
-  <a href="mailto:Magicdes2023@gmail.com" class="hero-cta">
-    Get in touch
-    <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-  </a>
-</section>
-
-<div class="divider"></div>
-
-<section class="section">
-  <div class="section-label">What we do</div>
-  <h2>Technology that works<br>while you sleep</h2>
-  <p class="section-intro">We design and deploy intelligent systems that automate customer communication, order management, and business operations across digital channels.</p>
-
-  <div class="services-grid">
-    <div class="service-card">
-      <div class="service-icon">⚡</div>
-      <div class="service-title">AI-Powered Automation</div>
-      <div class="service-desc">Intelligent workflows that handle repetitive tasks automatically, freeing your team to focus on what matters.</div>
-    </div>
-    <div class="service-card">
-      <div class="service-icon">💬</div>
-      <div class="service-title">Real-Time Communication</div>
-      <div class="service-desc">Seamless integration with WhatsApp, Instagram, and other messaging platforms to manage customer conversations from one place.</div>
-    </div>
-    <div class="service-card">
-      <div class="service-icon">🔗</div>
-      <div class="service-title">API Integration</div>
-      <div class="service-desc">We connect your existing tools and platforms so your data flows where it needs to go, without manual intervention.</div>
-    </div>
-    <div class="service-card">
-      <div class="service-icon">📊</div>
-      <div class="service-title">Business Intelligence</div>
-      <div class="service-desc">Real-time dashboards and analytics that give you a clear picture of your operations, customers, and performance.</div>
-    </div>
-  </div>
-</section>
-
-<div class="divider"></div>
-
-<section class="contact-section">
-  <div class="section-label">Contact</div>
-  <h2>Let's build something together</h2>
-  <p class="contact-sub">Have a project in mind? We'd love to hear about it.</p>
-  <a href="mailto:Magicdes2023@gmail.com" class="contact-email">Magicdes2023@gmail.com</a>
-</section>
-
-<footer>
-  <span>© 2026 Magic Design LLC. Registered in Delaware, USA.</span>
-  <span>AI · Automation · Integration</span>
-</footer>
-
-</body>
-</html>
+    box-shadow: 0 0 40px va
