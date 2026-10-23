@@ -464,6 +464,55 @@
     .divider { margin: 0 20px; }
   }
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://magicdesignllc.com/#organization",
+      "name": "Magic Design LLC",
+      "url": "https://magicdesignllc.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://magicdesignllc.com/apple-touch-icon.png",
+        "width": 180,
+        "height": 180
+      },
+      "email": "info@magicdesignllc.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "DE",
+        "addressCountry": "US"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://magicdesignllc.com/#website",
+      "url": "https://magicdesignllc.com/",
+      "name": "CENTRAL by Magic Design LLC",
+      "inLanguage": "es",
+      "publisher": { "@id": "https://magicdesignllc.com/#organization" }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://magicdesignllc.com/#software",
+      "name": "CENTRAL",
+      "url": "https://magicdesignllc.com/",
+      "description": "Panel de control para negocios que venden por WhatsApp e Instagram. Gestiona conversaciones, pedidos, catálogo y clientes desde un solo lugar.",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "inLanguage": "es",
+      "publisher": { "@id": "https://magicdesignllc.com/#organization" },
+      "offers": [
+        { "@type": "Offer", "name": "Basic", "price": "0", "priceCurrency": "USD" },
+        { "@type": "Offer", "name": "Profesional", "price": "29", "priceCurrency": "USD" },
+        { "@type": "Offer", "name": "Business", "price": "59", "priceCurrency": "USD" }
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
